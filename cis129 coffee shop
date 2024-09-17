@@ -1,14 +1,18 @@
 # Prices
 coffee_price = 5
+tea_price = 3
 muffin_price = 4
+brownie_price = 6
 tax_rate = 0.06
 
 #User input 
 coffees = int(input("Enter the number of coffees: "))
-muffins = int(input("Enter the number of muffin: "))
+muffins = int(input("Enter the number of muffins: "))
+teas = int(input("Enter the number of teas: "))
+brownies = int(input("Enter the number of brownies: "))
 
 #calculate subtotal
-subtotal = (coffees * coffee_price) + (muffins * muffin_price)
+subtotal = (coffees * coffee_price) + (muffins * muffin_price) + (teas * tea_price) + (brownies * brownie_price)
 
 #calculate tax
 tax = subtotal * tax_rate
@@ -16,17 +20,24 @@ tax = subtotal * tax_rate
 #Calculate total
 total = subtotal + tax
 print('***************************************')
-print('My Coffee and Muffin Shop')
+print('9 tales Coffee Shop')
 print('Numbers of coffees bought?')
 print(str(coffees))
 print('Number of Muffins bought?')
-print(str(muffins))      
+print(str(muffins))
+print('Number of Teas bought?')
+print(str(teas))
+print('Number of Brownies bought?')
+print(str(brownies))
 print('***************************************')
 print('---My Coffee and Muffin Shop Receipt---')
 print('Coffees '  + str(coffees) + str(' @ ') + str(coffee_price) + str('$'))
 print('Muffins ' + str(muffins) + str(' @ ') + str(muffin_price) + str('$'))
+print('Teas ' + str(teas) + str(' @ ') + str(tea_price) + str('$'))
+print('Brownies ' + str(brownies) + str(' @ ') + str(brownie_price) + str('$'))
 print('***************************************')
 print('Subtotal ' + str(subtotal) + str('$'))
 print('Tax ' + str(tax) + str('$'))
 print('Total ' + str(total) + str('$'))
 print('***************************************')
+print('Thank you for coming to 9 tales Coffee Shop and for your ongoing support we hope you love our products as much as we do.')
