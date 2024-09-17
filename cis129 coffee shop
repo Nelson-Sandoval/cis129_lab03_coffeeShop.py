@@ -1,0 +1,32 @@
+# Prices
+coffee_price = 5
+muffin_price = 4
+tax_rate = 0.06
+
+#User input 
+coffees = int(input("Enter the number of coffees: "))
+muffins = int(input("Enter the number of muffin: "))
+
+#calculate subtotal
+subtotal = (coffees * coffee_price) + (muffins * muffin_price)
+
+#calculate tax
+tax = subtotal * tax_rate
+
+#Calculate total
+total = subtotal + tax
+print('***************************************')
+print('My Coffee and Muffin Shop')
+print('Numbers of coffees bought?')
+print(str(coffees))
+print('Number of Muffins bought?')
+print(str(muffins))      
+print('***************************************')
+print('---My Coffee and Muffin Shop Receipt---')
+print('Coffees '  + str(coffees) + str(' @ ') + str(coffee_price) + str('$'))
+print('Muffins ' + str(muffins) + str(' @ ') + str(muffin_price) + str('$'))
+print('***************************************')
+print('Subtotal ' + str(subtotal) + str('$'))
+print('Tax ' + str(tax) + str('$'))
+print('Total ' + str(total) + str('$'))
+print('***************************************')
